@@ -193,7 +193,7 @@ void BuildFromPath(FilePackerBuilder& builder, bool compress, const std::string&
 		}
 		else
 		{
-			FILEPACKER_LOGV(" - IGNORED: %s%s\n", path.c_str(), file.name);
+			FILEPACKER_LOGV(" - SKIPPED: %s%s\n", path.c_str(), file.name);
 		}
 	}
 

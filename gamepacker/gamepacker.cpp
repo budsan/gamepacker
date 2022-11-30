@@ -136,7 +136,7 @@ bool FileSystem::Open(void* _handle, FileCallbacks* _callbacks)
 			FileEntry entry;
 			cb->read(handle, (unsigned char*) &entry.header, sizeof(entry.header));
 
-			size_t length;
+			uint32_t length;
 			cb->read(handle, (unsigned char*)&length, sizeof(length));
 
 			if (length > FileEntry::MaxPathLength)
